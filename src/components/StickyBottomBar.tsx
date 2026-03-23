@@ -1,4 +1,4 @@
-import { Phone, MessageCircle } from "lucide-react";
+/*import { Phone, MessageCircle } from "lucide-react";
 
 const StickyBottomBar = () => {
   return (
@@ -24,4 +24,4 @@ const StickyBottomBar = () => {
   );
 };
 
-export default StickyBottomBar;
+export default StickyBottomBar;*/

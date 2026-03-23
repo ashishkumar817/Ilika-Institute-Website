@@ -7,7 +7,7 @@ import LocalSEOSection from "@/components/LocalSEOSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import StickyBottomBar from "@/components/StickyBottomBar";
+
 import FloatingButtons from "@/components/FloatingButtons";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import SEOHead from "@/components/SEOHead";
@@ -29,7 +29,7 @@ const Index = () => {
       <AnimateOnScroll><TestimonialsSection /></AnimateOnScroll>
       <AnimateOnScroll><ContactSection /></AnimateOnScroll>
       <Footer />
-      <StickyBottomBar />
+      
       <FloatingButtons />
     </div>
   );

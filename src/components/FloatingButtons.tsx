@@ -11,33 +11,37 @@ const FloatingButtons = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-20 right-4 z-50 flex-col gap-3 hidden md:flex">
+    <div className="fixed bottom-6 right-4 z-50 flex flex-col gap-3">
+
+      {/* Scroll to Top */}
       {showTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="w-14 h-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg hover:scale-110 transition-transform animate-fade-in"
-          aria-label="Scroll to top"
+          className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary text-white flex items-center justify-center shadow-lg hover:scale-110 transition"
         >
-          <ArrowUp className="h-6 w-6" />
+          <ArrowUp className="h-5 w-5 md:h-6 md:w-6" />
         </button>
       )}
+
+      {/* Call Button */}
       <a
         href="tel:+919901849548"
-        className="w-14 h-14 rounded-full bg-accent text-accent-foreground flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-        aria-label="Call Now"
+        className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-red-500 text-white flex items-center justify-center shadow-lg hover:scale-110 transition"
       >
-        <Phone className="h-6 w-6" />
+        <Phone className="h-5 w-5 md:h-6 md:w-6" />
       </a>
+
+      {/* WhatsApp Button */}
       <a
         href="https://wa.me/919901849548"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-        style={{ backgroundColor: "hsl(142, 70%, 40%)", color: "white" }}
-        aria-label="Chat on WhatsApp"
+        className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"
+        style={{ backgroundColor: "#25D366", color: "white" }}
       >
-        <MessageCircle className="h-6 w-6" />
+        <MessageCircle className="h-5 w-5 md:h-6 md:w-6" />
       </a>
+
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import StickyBottomBar from "@/components/StickyBottomBar";
+
 import FloatingButtons from "@/components/FloatingButtons";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import SEOHead from "@/components/SEOHead";
@@ -31,7 +31,7 @@ const ContactPage = () => {
       </div>
       <AnimateOnScroll><ContactSection /></AnimateOnScroll>
       <Footer />
-      <StickyBottomBar />
+      
       <FloatingButtons />
     </div>
   );

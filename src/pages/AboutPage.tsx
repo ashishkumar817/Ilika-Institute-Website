@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/AboutSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
-import StickyBottomBar from "@/components/StickyBottomBar";
+
 import FloatingButtons from "@/components/FloatingButtons";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import SEOHead from "@/components/SEOHead";
@@ -33,7 +33,7 @@ const AboutPage = () => {
       <AnimateOnScroll><AboutSection /></AnimateOnScroll>
       <AnimateOnScroll><TestimonialsSection /></AnimateOnScroll>
       <Footer />
-      <StickyBottomBar />
+     
       <FloatingButtons />
     </div>
   );

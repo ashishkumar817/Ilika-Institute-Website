@@ -45,6 +45,16 @@ const HeroSection = () => {
             <strong className="text-primary-foreground">20–30 days</strong>
           </p>
 
+          {/* MOBILE IMAGE ONLY */}
+<div className="flex justify-center my-6 lg:hidden">
+  <div className="w-45 h-45 rounded-full border-2 border-accent/30 flex items-center justify-center bg-primary-foreground/10 backdrop-blur-sm shadow-xl">
+    <img
+      src={logo}
+      alt="Ilika Institute Logo"
+      className="w-full h-full object-contain"
+    />
+  </div>
+</div>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button variant="cta" size="lg" className="text-base h-14 px-8" asChild>
               <a href="tel:+919901849548">
