@@ -28,7 +28,7 @@ const HeroSection = () => {
 
       <div className="container relative z-10">
         <div className="max-w-2xl animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-accent/20 rounded-full px-4 py-1.5 mb-6">
+          <div className="inline-flex items-center gap-2 bg-accent/20 rounded-full px-4 py-1.5 mt-8 sm:mt-6 mb-6">
             <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
             <span className="text-sm font-medium text-primary-foreground/90">
               Rated 5/5 by students
@@ -68,14 +68,30 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4 md:gap-6 text-primary-foreground/60 text-sm">
-            <span>✓ 100% Practical</span>
-            <span>✓ Expert Mentors</span>
-            <span>✓ Job Ready</span>
-            <Link to="/courses" className="text-accent hover:underline font-medium">
-              View All Courses →
-            </Link>
-          </div>
+          <div className="mt-8 text-primary-foreground/60 text-sm">
+  
+  <div className="mt-8 text-primary-foreground/60 text-sm">
+  
+  {/* checklist */}
+  <div className="flex flex-wrap gap-3 sm:gap-6">
+    <span>✓ 100% Practical</span>
+    <span>✓ Expert Mentors</span>
+    <span>✓ Job Ready</span>
+  </div>
+
+  {/* view courses */}
+  <div className="mt-4 mb-6">
+    <Link 
+      to="/courses" 
+      className="text-accent hover:underline font-medium inline-block"
+    >
+      View All Courses →
+    </Link>
+  </div>
+
+</div>
+
+</div>
         </div>
       </div>
     </section>
