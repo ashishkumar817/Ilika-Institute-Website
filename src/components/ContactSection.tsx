@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, MapPin, Clock, Send } from "lucide-react";
+import { Phone, Instagram,Facebook,Youtube,Mail,MessageCircle, MapPin, Clock, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
@@ -48,6 +48,18 @@ const ContactSection = () => {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                <Mail className="h-5 w-5 text-accent" />
+              </div>
+              <div>
+                <h3 className="font-semibold mb-1">Mail</h3>
+                <a href="mailto:ilikainstitute@gmail.com" className="text-muted-foreground hover:text-accent transition-colors">
+                  ilikainstitute@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
                 <MapPin className="h-5 w-5 text-accent" />
               </div>
               <div>
@@ -71,7 +83,35 @@ const ContactSection = () => {
                 </p>
               </div>
             </div>
+            <div className="flex items-center justify-center gap-3 mb-3" ></div>
+            <div className="flex gap-4">
+  <a
+    href="https://www.instagram.com/ilikainstitute"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center hover:bg-accent hover:text-white transition-all"
+  >
+    <Instagram className="h-5 w-5 text-accent" />
+  </a>
 
+  <a
+    href="https://www.facebook.com/ilikainstitute/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center hover:bg-accent hover:text-white transition-all"
+  >
+    <Facebook className="h-5 w-5 text-accent" />
+  </a>
+
+  <a
+    href="https://www.youtube.com/@ilikainstitute"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center hover:bg-accent hover:text-white transition-all"
+  >
+    <Youtube className="h-5 w-5 text-accent" />
+  </a>
+</div>
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <Button variant="cta" size="lg" asChild>
                 <a href="tel:+919901849548">
@@ -87,6 +127,13 @@ const ContactSection = () => {
 
             {/* Google Maps */}
             <div className="rounded-xl overflow-hidden border border-border h-64 md:h-72">
+              <div className="flex items-center justify-center gap-3 mb-3" >
+  <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+    <MapPin className="h-5 w-5 text-accent" />
+  </div>
+
+  <h3 className="font-semibold">Our Location</h3>
+</div>
               <iframe
                 title="Ilika Institute Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.198292283497!2d74.7455236750828!3d13.337937987012165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb58b1e388dd%3A0xd0e48348d293fc8!2sIlika%20Institute!5e0!3m2!1sen!2sin!4v1774274457005!5m2!1sen!2sin"

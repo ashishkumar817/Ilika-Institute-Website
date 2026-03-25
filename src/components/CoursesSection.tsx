@@ -3,10 +3,11 @@ import { Clock, IndianRupee, MessageCircle } from "lucide-react";
 
 const courses = [
   { title: "Video Editing Course in Udupi", desc: "Complete video editing fundamentals to advanced techniques" },
-  { title: "Instagram Reels Editing Course", desc: "Create viral short-form content for social media" },
-  { title: "YouTube Video Editing Training", desc: "Master YouTube content creation & channel growth" },
+  { title: "Reels & Vlogs  Editing Course", desc: "Create viral short-form content for social media" },
+  { title: "Teaser & Promo Editing Training", desc: "Master teaser and promo  creation growth" },
   { title: "Wedding Video Editing", desc: "Cinematic wedding films & event videography" },
   { title: "Cinematic Editing & Color Grading", desc: "DaVinci Resolve color grading & film-look techniques" },
+  { title: "Visual Effects & VFX Compositing", desc: "Visual Effects and VFX Compositing" },
 ];
 
 const CoursesSection = () => {

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Phone, MapPin } from "lucide-react";
+import { Instagram, Facebook, Youtube, Phone, Mail,MapPin } from "lucide-react";
 import logo from "@/assets/ilika-logo.png";
 
 const Footer = () => {
@@ -30,6 +30,10 @@ const Footer = () => {
                 <Phone className="h-4 w-4" />
                 <a href="tel:+919901849548" className="hover:text-accent transition-colors">+91 99018 49548</a>
               </li>
+              <li className="flex items-center gap-2">
+                <Mail className="h-4 w-4" />
+                <a href="mailto:ilikainstitute@gmail.com" className="hover:text-accent transition-colors">ilikainstitute@gmail.com</a>
+              </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
                 <span>Brahmagiri, Udupi, Karnataka 576101</span>
@@ -38,12 +42,20 @@ const Footer = () => {
                 <Instagram className="h-4 w-4" />
                 <a href="https://www.instagram.com/ilikainstitute" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@ilikainstitute</a>
               </li>
+              <li className="flex items-center gap-2">
+                <Facebook className="h-4 w-4" />
+                <a href="https://www.facebook.com/ilikainstitute/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@ilikainstitute</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Youtube className="h-4 w-4" />
+                <a href="https://www.youtube.com/@ilikainstitute" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@ilikainstitute</a>
+              </li>
             </ul>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-primary-foreground/10 text-center text-xs text-primary-foreground/50">
           © {new Date().getFullYear()} Ilika Institute of Editing, Udupi. All rights reserved. |
-          Video Editing Course in Udupi | Best Editing Institute Karnataka
+          Video Editing Course in Udupi | Best Video Editing Institute Karnataka
         </div>
       </div>
     </footer>
